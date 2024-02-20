@@ -6,11 +6,11 @@ export default function Card(props) {
         <div>
           <img src={`/images/${props.item.img}`} className="card--photo" />
         </div>
-        <div>
+        <div className="card--info--all">
           <div className="card--info--row1">
               <div className="card--info--row1--destination">
                 <img src="/images/destination.png" className="card--location-logo" />
-                <h6>{`${props.item.location}`} </h6>
+                <h5>{`${props.item.location}`} </h5>
               </div>
               <div>
                 <p className="card--info--map--link">
@@ -18,11 +18,18 @@ export default function Card(props) {
                 </p>
               </div>
           </div>
+
           <div className="card--info--row2">
             <h3> {`${props.item.title}`}</h3>
           </div>
 
+          <div className="card--info--row3">
+            <h6> {`${props.item.startDate} - ${props.item.endDate}`}</h6>
+          </div>
 
+          <div className="card--info--row4">
+            <p> {`${props.item.description}`}</p>
+          </div>
         </div>
       </div>
   )
