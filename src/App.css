@@ -64,4 +64,21 @@
 .card--info--row1--destination {
   display: flex;
   align-items: center;
+  gap: 0.2rem;
+}
+.card--info--row2 {
+  margin-left: 1rem;
+
+}
+.card--info--row3 {
+  margin-left: 1rem;
+
+}
+.card--info--row4 {
+  margin-left: 1rem;
+
+}
+.card--info--row4 > p {
+  font-size: 11px;
+
 }
