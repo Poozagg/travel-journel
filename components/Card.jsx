@@ -6,7 +6,7 @@ export default function Card(props) {
         <div>
           <img src={`/images/${props.item.img}`} className="card--photo" />
         </div>
-        <div>
+        <div className="card--info--all">
           <div className="card--info--row1">
               <div className="card--info--row1--destination">
                 <img src="/images/destination.png" className="card--location-logo" />
